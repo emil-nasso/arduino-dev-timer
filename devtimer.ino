@@ -49,6 +49,7 @@ void setup() {
 
 void resetTimer() {
   timer.disable(timerId);
+  timer.deleteTimer(timerId);
   secondsLeft = countdownInitialValue;
   completed = false;
   started = false;
